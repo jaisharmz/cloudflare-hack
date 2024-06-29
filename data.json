@@ -1,0 +1,334 @@
+{
+    "container_type": "Author",
+    "filled": [
+        "coauthors"
+    ],
+    "source": "SEARCH_AUTHOR_SNIPPETS",
+    "scholar_id": "4bahYMkAAAAJ",
+    "url_picture": "https://scholar.google.com/citations?view_op=medium_photo&user=4bahYMkAAAAJ",
+    "name": "Steven A. Cholewiak, PhD",
+    "affiliation": "Applied Vision Scientist at Google LLC",
+    "email_domain": "@google.com",
+    "interests": [
+        "Depth Cues",
+        "3D Shape",
+        "Shape from Texture & Shading",
+        "Naive Physics",
+        "Haptics"
+    ],
+    "citedby": 598,
+    "coauthors": [
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "Smr99uEAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Martin Banks",
+            "affiliation": "Professor of Vision Science, UC Berkeley"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "ruUKktgAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Roland Fleming",
+            "affiliation": "Kurt Koffka Professor of Experimental Psychology, University of Giessen"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "3xJXtlwAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Gordon D. Love",
+            "affiliation": "University of Leeds, School of Computing"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "OiVOAHMAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Hong Z Tan",
+            "affiliation": "Professor of ECE, Purdue University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "MnUboHYAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Ari Weinstein",
+            "affiliation": "Deepmind"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "KoJrMIAAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Jacob Feldman",
+            "affiliation": "Professor of Psychology and Cognitive Science, Rutgers University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "aYyDsZ0AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Pratul Srinivasan",
+            "affiliation": "Research Scientist at Google Research"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "9XRvM88AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Manish Singh",
+            "affiliation": "Rutgers University, New Brunswick, NJ"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "6H0mhLUAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Ren Ng",
+            "affiliation": "Professor in Computer Science, University of California, Berkeley"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "FoVvIK0AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Peter C. Pantelis",
+            "affiliation": "Formerly: Indiana University, Rutgers University, University of Pennsylvania"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "rNTIQXYAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Steven W Zucker",
+            "affiliation": "Yale University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "JPZWLKQAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Ben Kunsberg",
+            "affiliation": "Brown University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "OTLc4PIAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Austin ROORDA",
+            "affiliation": "UC Berkeley"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "LB2Ji0sAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "David S Ebert",
+            "affiliation": "Gallogly Professor of ECE, Assoc. VPRP, University of Oklahoma"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "rRJ9wTJMUB8C",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Joshua B. Tenenbaum",
+            "affiliation": "MIT"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "bTdT7hAAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Chris Baker",
+            "affiliation": "Chief Scientist, ISEE AI"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "nHx9IgYAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Peter Shirley",
+            "affiliation": "Nvidia Corporation"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "xZLjeAMAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Ozan Cakmakci",
+            "affiliation": "Lead, Optical Architectures & Design, Google AR, Google"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "Ky6YeHQAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Zeynep Başgöze",
+            "affiliation": "Neuroimaging Research Scientist, University of Minnesota, Psychiatry and Behavioral …"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "6Wo3XX4AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Emily Averill Cooper",
+            "affiliation": "University of California, Berkeley"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "Lxc38NsAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "David M. Hoffman",
+            "affiliation": "Google"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "9xN3AFkAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Emma Alexander",
+            "affiliation": "Northwestern University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "7QU97-8AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Daniel Holtmann-Rice",
+            "affiliation": "Graduate Student in Computer Science, Yale University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "KXQb7CAAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Sung-Ho Kim",
+            "affiliation": "Professor of Psychology, Ewha Womans University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "eRcfGQYAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Francesco LaRocca",
+            "affiliation": "Apple"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "E-vYTkgAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Swati Bhargava",
+            "affiliation": "Graduate Student, CREOL, UCF"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "5044hpsAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Derek Nankivil, PhD",
+            "affiliation": "Principal Engineer - Vision Products, Research & Development, Johnson & Johnson Vision …"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "AE7Xvl0AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "David Luebke",
+            "affiliation": "Vice President of Research, NVIDIA Corporation"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "FhyBsnQAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Kaan Akşit",
+            "affiliation": "Associate Professor of Computational Light, University College London"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "RbUgwbwAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Anjul Patney",
+            "affiliation": "NVIDIA Research"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "WzhSQzkAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Josef Spjut",
+            "affiliation": "Research Scientist, NVIDIA"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "HcMv-28AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Ward Lopes",
+            "affiliation": "Senior Research Scientist, NVIDIA"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "NN4GKo8AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Melissa M. Kibbe",
+            "affiliation": "Associate Professor, Boston University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "LgU3FXIAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Roger W. Cholewiak",
+            "affiliation": "Senior Research Psychologist, Emeritus, Princeton University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "b9u-pTsAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Flip Phillips",
+            "affiliation": "Professor of Motion Picture Science, Rochester Institute of Technology"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "9Z55Ls4AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Julia Mazzarella",
+            "affiliation": "Assistant Professor of Physical Therapy, University of Montana"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "I23YUh8AAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Morgan McGuire",
+            "affiliation": "Roblox Chief Scientist; faculty at University of Waterloo and McGill University"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "1M3nfPAAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Agostino Gibaldi",
+            "affiliation": "Magic Leap Inc"
+        },
+        {
+            "container_type": "Author",
+            "filled": [],
+            "scholar_id": "tD7OGTQAAAAJ",
+            "source": "CO_AUTHORS_LIST",
+            "name": "Vivek Labhishetty",
+            "affiliation": "Senior Clinical Project Lead"
+        }
+    ]
+}
