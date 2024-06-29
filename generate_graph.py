@@ -2,7 +2,7 @@ import networkx as nx
 from pyvis.network import Network
 import json
 
-def get_graph_html(author_name):
+def get_graph_html(author_name, ID):
 
     graph_file = f'./{author_name}_graph_data.json'
     id_file = f'./{author_name}_id_data.json'
@@ -15,52 +15,6 @@ def get_graph_html(author_name):
     with open(id_file) as f:
         info_list = json.load(f)
 
-    # # Define the adjacency list
-    # adjacency_list = {
-    #     "4bahYMkAAAAJ": [
-    #         "Smr99uEAAAAJ",
-    #         "ruUKktgAAAAJ",
-    #         "3xJXtlwAAAAJ",
-    #         "OiVOAHMAAAAJ",
-    #         "MnUboHYAAAAJ"
-    #     ],
-    #     "Smr99uEAAAAJ": [
-    #         "4bahYMkAAAAJ"
-    #     ],
-    #     "ruUKktgAAAAJ": [
-    #         "Ve4OHewAAAAJ",
-    #         "34eszXwAAAAJ",
-    #         "G2DxMNwAAAAJ",
-    #         "vB9-gIkAAAAJ",
-    #         "gQa4_nUAAAAJ",
-    #         "4bahYMkAAAAJ"
-    #     ],
-    #     "3xJXtlwAAAAJ": [
-    #         "4bahYMkAAAAJ"
-    #     ],
-    #     "OiVOAHMAAAAJ": [
-    #         "4bahYMkAAAAJ"
-    #     ],
-    #     "MnUboHYAAAAJ": [
-    #         "4bahYMkAAAAJ"
-    #     ],
-    #     "Ve4OHewAAAAJ": [
-    #         "ruUKktgAAAAJ"
-    #     ],
-    #     "34eszXwAAAAJ": [
-    #         "ruUKktgAAAAJ"
-    #     ],
-    #     "G2DxMNwAAAAJ": [
-    #         "ruUKktgAAAAJ"
-    #     ],
-    #     "vB9-gIkAAAAJ": [
-    #         "ruUKktgAAAAJ"
-    #     ],
-    #     "gQa4_nUAAAAJ": [
-    #         "ruUKktgAAAAJ"
-    #     ]
-    # }
-
     # Create a NetworkX graph from the adjacency list
     G = nx.Graph()
     for node, neighbors in adjacency_list.items():
@@ -72,15 +26,27 @@ def get_graph_html(author_name):
 
     # Add nodes and edges to the Pyvis network, including URLs for each node
     for node in G.nodes():
-        net.add_node(
-            node,
-            label=info_list[node]['name'],
-            title=f"Affiliation: {info_list[node]['affiliation']}",
-            url=f"https://scholar.google.com/citations?user={node}",
-            shape="circularImage",
-            image=f'https://scholar.googleusercontent.com/citations?view_op=small_photo&user={node}',
-            broken_image='https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
-        )
+        if node == ID:
+            net.add_node(
+                node,
+                label=info_list[node]['name'],
+                title=f"Affiliation: {info_list[node]['affiliation']}",
+                url=f"https://scholar.google.com/citations?user={node}",
+                shape="diamond",
+                size=info_list[node].get('size', 50),
+                image=f'https://scholar.googleusercontent.com/citations?view_op=small_photo&user={node}',
+                broken_image='https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
+            )
+        else:
+            net.add_node(
+                node,
+                label=info_list[node]['name'],
+                title=f"Affiliation: {info_list[node]['affiliation']}",
+                url=f"https://scholar.google.com/citations?user={node}",
+                shape="circularImage",
+                image=f'https://scholar.googleusercontent.com/citations?view_op=small_photo&user={node}',
+                broken_image='https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
+            )
 
     # Add edges
     for edge in G.edges():
@@ -141,4 +107,4 @@ def get_graph_html(author_name):
         
 if __name__ == '__main__':
     author_name = 'Ilya Sutskever'
-    get_graph_html(author_name)
+    get_graph_html(author_name, 'x04W_mMAAAAJ')
