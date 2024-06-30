@@ -139,3 +139,120 @@ Isabelle Valdes ; Joanna Vasquez
 
 Wendy Zhou ; Milind Maiti
 - Attended the same blockchain workshop
+
+Christopher Sun ; Helena Petrov
+- Collaborated on a research project in computational biology
+
+Arjun Shrivastava ; Maya Lin
+- Organized a technology awareness event at their local community center
+
+Yash Thapliyal ; Eric Johnson
+- Worked together in a summer coding bootcamp for high school students
+
+Rahul Shankar ; Lucia Gomez
+- Co-wrote a paper on renewable energy solutions for developing countries
+
+Sofia Abramsky-Sze ; Jin Soo Kim
+- Jointly led a workshop on data science for social good
+
+Nadia AlAjmi ; Amir Hossain
+- Presented together at an international conference on peace studies
+
+Esteban Benitez ; Tara Schmidt
+- Both are founding members of a startup focusing on educational technology
+
+Chelsea Cano ; Nikolai Petrovski
+- Teamed up for an architectural design competition
+
+Lisha Chen ; Ayesha Siddiqi
+- Developed a mobile app focused on mental health awareness
+
+Zoe Chyatte ; Thomas Müller
+- Conducted a joint field study on urban biodiversity
+
+Cameron Danesh ; Priya Rajan
+- Co-founded a non-profit organization for digital literacy
+
+Xiaosang Huang ; Leila Torres
+- Collaborated on translating ancient manuscripts digitally
+
+Christina Ji ; Marc Antoine
+- Performed together in a university theater production
+
+Gamin Kim ; Fiona Clarke
+- Co-authored a paper on the impact of virtual reality on learning
+
+Serina Li ; Jackson Brooks
+- Both were speakers at a panel discussing innovations in fintech
+
+Mallika Luthar ; Andrei Popov
+- Partnered in a competition to design sustainable housing solutions
+
+Joseph Tak Maga ; Clara Rodriguez
+- Collaborated on a documentary about indigenous languages
+
+Liam Mirise ; Ananya Singh
+- Developed an open-source project for environmental data analysis
+
+Olivia Nouriani ; Samuel Lee
+- Co-organizers of a community health awareness initiative
+
+Evie Portier ; Diego Martinez
+- Teamed up to create a sustainable urban garden project
+
+Xingying (Caroline) Ren ; Hanna Moller
+- Collaborated on a graduate thesis about urban resilience
+
+Isabelle Valdes ; Haruto Tanaka
+- Together, launched a podcast discussing global cultural trends
+
+Joanna Vasquez ; Mohan Das
+- Jointly conducted a study on the effectiveness of e-learning tools
+
+Wendy Zhou ; Alexi Romanov
+- Partnered to develop a blockchain-based voting system
+
+Helena Petrov ; Eric Johnson
+- Developed a new algorithm for optimizing traffic flow in smart cities
+
+Maya Lin ; Lucia Gomez
+- Organized a series of workshops on women empowerment in technology
+
+Eric Johnson ; Amir Hossain
+- Created a tech startup focusing on affordable clean energy solutions
+
+Lucia Gomez ; Tara Schmidt
+- Advocated together for policy changes in urban housing
+
+Jin Soo Kim ; Nikolai Petrovski
+- Researched the integration of AI in traditional manufacturing processes
+
+Amir Hossain ; Ayesha Siddiqi
+- Published a joint paper on the socio-economic impacts of mobile banking in South Asia
+
+Tara Schmidt ; Thomas Müller
+- Collaborated on a public art project that integrates solar power
+
+Nikolai Petrovski ; Priya Rajan
+- Launched a joint venture that uses AI to optimize water usage in agriculture
+
+Ayesha Siddiqi ; Leila Torres
+- Co-authored a blog series on women's health initiatives worldwide
+
+Thomas Müller ; Marc Antoine
+- Designed a series of interactive installations for a major art festival
+
+Priya Rajan ; Fiona Clarke
+- Collaborated on developing educational VR content for rural schools
+
+Leila Torres ; Jackson Brooks
+- Started a grassroots campaign to raise awareness about cybersecurity in local businesses
+
+Marc Antoine ; Andrei Popov
+- Created an online platform to facilitate cultural exchange between artists globally
+
+Fiona Clarke ; Clara Rodriguez
+- Organized a conference focused on the future of sustainable fashion
+
+Jackson Brooks ; Ananya Singh
+- Developed a predictive analytics tool for monitoring urban air quality
