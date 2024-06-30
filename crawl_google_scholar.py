@@ -3,8 +3,8 @@ from collections import deque
 import json
 from tqdm import tqdm
 
-TOT_NODES = 100
-MAX_DEG = 5
+TOT_NODES = 50
+MAX_DEG = 7
 
 def process(author_name='Ilya Sutskever'):
     search_query = scholarly.search_author(author_name)
@@ -53,7 +53,7 @@ def process(author_name='Ilya Sutskever'):
         if cur in ID_adj_list:
             continue
             
-        # print(cur)
+        print(cur)
             
         search_query = scholarly.search_author_id(cur)
         
@@ -64,7 +64,7 @@ def process(author_name='Ilya Sutskever'):
         
         # scholarly.fill
         
-        # print(dictionary)
+        print(dictionary)
         
         ID_adj_list[cur] = []
         

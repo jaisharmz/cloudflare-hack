@@ -6,4 +6,4 @@ def pipeline(name):
     get_graph_html(name, ID)
     
 if __name__ == '__main__':
-    pipeline('Yann LeCun')
+    pipeline('Ian Goodfellow')

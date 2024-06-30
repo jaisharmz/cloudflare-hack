@@ -106,5 +106,5 @@ def get_graph_html(author_name, ID):
         
         
 if __name__ == '__main__':
-    author_name = 'Ilya Sutskever'
-    get_graph_html(author_name, 'x04W_mMAAAAJ')
+    author_name = 'Ian Goodfellow'
+    get_graph_html(author_name, 'asdf')
