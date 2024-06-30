@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "1. **Jai Sharma**", "label": "1. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Milind Maiti**", "label": "**Milind Maiti**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "2. **Jai Sharma**", "label": "2. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Christopher Sun**", "label": "**Christopher Sun**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "3. **Jai Sharma**", "label": "3. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Aila Matanock**", "label": "**Aila Matanock**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "4. **Jai Sharma**", "label": "4. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Andrew Reddie**", "label": "**Andrew Reddie**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "5. **Jai Sharma**", "label": "5. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Julia Raven**", "label": "**Julia Raven**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "6. **Jai Sharma**", "label": "6. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Jennie Barker**", "label": "**Jennie Barker**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "7. **Jai Sharma**", "label": "7. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Joanna Vasquez**", "label": "**Joanna Vasquez**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "8. **Jai Sharma**", "label": "8. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Serina Li**", "label": "**Serina Li**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "9. **Jai Sharma**", "label": "9. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Monzerrath**", "label": "**Monzerrath**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "10. **Jai Sharma**", "label": "10. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Antonio**", "label": "**Antonio**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "11. **Jai Sharma**", "label": "11. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Hector Cardenas**", "label": "**Hector Cardenas**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "12. **Jai Sharma**", "label": "12. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Sofia Abramsky-Sze**", "label": "**Sofia Abramsky-Sze**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "13. **Jai Sharma**", "label": "13. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Nadia AlAjmi**", "label": "**Nadia AlAjmi**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "14. **Jai Sharma**", "label": "14. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Jaeyeon Bae**", "label": "**Jaeyeon Bae**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "15. **Jai Sharma**", "label": "15. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Esteban Benitez**", "label": "**Esteban Benitez**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "16. **Jai Sharma**", "label": "16. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Chelsea Cano**", "label": "**Chelsea Cano**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "17. **Jai Sharma**", "label": "17. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Antonio Chavez-Askew**", "label": "**Antonio Chavez-Askew**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "18. **Jai Sharma**", "label": "18. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Lisha Chen**", "label": "**Lisha Chen**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "19. **Jai Sharma**", "label": "19. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Zoe Chyatte**", "label": "**Zoe Chyatte**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "20. **Jai Sharma**", "label": "20. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Cameron Danesh**", "label": "**Cameron Danesh**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "21. **Jai Sharma**", "label": "21. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Xiaosang Huang**", "label": "**Xiaosang Huang**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "22. **Jai Sharma**", "label": "22. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Christina Ji**", "label": "**Christina Ji**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "23. **Jai Sharma**", "label": "23. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Gamin Kim**", "label": "**Gamin Kim**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "24. **Jai Sharma**", "label": "24. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Mallika Luthar**", "label": "**Mallika Luthar**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "25. **Jai Sharma**", "label": "25. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Joseph Tak Maga**", "label": "**Joseph Tak Maga**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "26. **Jai Sharma**", "label": "26. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Liam Mirise**", "label": "**Liam Mirise**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "27. **Jai Sharma**", "label": "27. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Rana Nejad**", "label": "**Rana Nejad**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "28. **Jai Sharma**", "label": "28. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Olivia Nouriani**", "label": "**Olivia Nouriani**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "29. **Jai Sharma**", "label": "29. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Evie Portier**", "label": "**Evie Portier**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "30. **Jai Sharma**", "label": "30. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Xingying (Caroline) Ren**", "label": "**Xingying (Caroline) Ren**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "31. **Jai Sharma**", "label": "31. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Isabelle Valdes**", "label": "**Isabelle Valdes**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "32. **Jai Sharma**", "label": "32. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Wendy Zhou**", "label": "**Wendy Zhou**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "33. **Jai Sharma**", "label": "33. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Akshat Jha**", "label": "**Akshat Jha**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "34. **Jai Sharma**", "label": "34. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Rithwik Nukala**", "label": "**Rithwik Nukala**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "35. **Jai Sharma**", "label": "35. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Arjun Shrivastava**", "label": "**Arjun Shrivastava**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "36. **Jai Sharma**", "label": "36. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Yash Thapliyal**", "label": "**Yash Thapliyal**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "37. **Jai Sharma**", "label": "37. **Jai Sharma**", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "**Rahul Shankar**", "label": "**Rahul Shankar**", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"from": "1. **Jai Sharma**", "label": "", "title": "   - Friends", "to": "**Milind Maiti**", "width": 1}, {"from": "2. **Jai Sharma**", "label": "", "title": "   - Co-authored a paper on Machine Learning", "to": "**Christopher Sun**", "width": 1}, {"from": "3. **Jai Sharma**", "label": "", "title": "   - Research assistant to Professor Aila Matanock since January 2021", "to": "**Aila Matanock**", "width": 1}, {"from": "4. **Jai Sharma**", "label": "", "title": "   - Both associated with UC Berkeley and have research interests in international relations and political theory", "to": "**Andrew Reddie**", "width": 1}, {"from": "5. **Jai Sharma**", "label": "", "title": "   - Both are students in the Department of Political Science at UC Berkeley", "to": "**Julia Raven**", "width": 1}, {"from": "6. **Jai Sharma**", "label": "", "title": "   - Both are students in the Department of Political Science at UC Berkeley", "to": "**Jennie Barker**", "width": 1}, {"from": "7. **Jai Sharma**", "label": "", "title": "   - Both are juniors at UC Berkeley studying Political Science", "to": "**Joanna Vasquez**", "width": 1}, {"from": "8. **Jai Sharma**", "label": "", "title": "   - Both are students at UC Berkeley with interests in international relations", "to": "**Serina Li**", "width": 1}, {"from": "9. **Jai Sharma**", "label": "", "title": "   - Both are students at UC Berkeley majoring in Political Science", "to": "**Monzerrath**", "width": 1}, {"from": "10. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley majoring in Political Science", "to": "**Antonio**", "width": 1}, {"from": "11. **Jai Sharma**", "label": "", "title": "    - Both associated with UC Berkeley and have interests in international relations", "to": "**Hector Cardenas**", "width": 1}, {"from": "12. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in public policy", "to": "**Sofia Abramsky-Sze**", "width": 1}, {"from": "13. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in international relations", "to": "**Nadia AlAjmi**", "width": 1}, {"from": "14. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with research interests", "to": "**Jaeyeon Bae**", "width": 1}, {"from": "15. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in public policy", "to": "**Esteban Benitez**", "width": 1}, {"from": "16. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in international affairs", "to": "**Chelsea Cano**", "width": 1}, {"from": "17. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley majoring in Political Science", "to": "**Antonio Chavez-Askew**", "width": 1}, {"from": "18. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political science", "to": "**Lisha Chen**", "width": 1}, {"from": "19. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in cognitive science", "to": "**Zoe Chyatte**", "width": 1}, {"from": "20. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political economy", "to": "**Cameron Danesh**", "width": 1}, {"from": "21. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political economy", "to": "**Xiaosang Huang**", "width": 1}, {"from": "22. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in international relations", "to": "**Christina Ji**", "width": 1}, {"from": "23. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political science", "to": "**Gamin Kim**", "width": 1}, {"from": "24. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political science", "to": "**Mallika Luthar**", "width": 1}, {"from": "25. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political economy", "to": "**Joseph Tak Maga**", "width": 1}, {"from": "26. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in global studies", "to": "**Liam Mirise**", "width": 1}, {"from": "27. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political science", "to": "**Rana Nejad**", "width": 1}, {"from": "28. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political science", "to": "**Olivia Nouriani**", "width": 1}, {"from": "29. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in international security", "to": "**Evie Portier**", "width": 1}, {"from": "30. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in environmental policy", "to": "**Xingying (Caroline) Ren**", "width": 1}, {"from": "31. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley majoring in Political Science", "to": "**Isabelle Valdes**", "width": 1}, {"from": "32. **Jai Sharma**", "label": "", "title": "    - Both are students at UC Berkeley with interests in political economy", "to": "**Wendy Zhou**", "width": 1}, {"from": "33. **Jai Sharma**", "label": "", "title": "    - Both are high school students with interests in science and technology", "to": "**Akshat Jha**", "width": 1}, {"from": "34. **Jai Sharma**", "label": "", "title": "    - Both are high school students at Monta Vista High School", "to": "**Rithwik Nukala**", "width": 1}, {"from": "35. **Jai Sharma**", "label": "", "title": "    - Both are high school students at Monta Vista High School", "to": "**Arjun Shrivastava**", "width": 1}, {"from": "36. **Jai Sharma**", "label": "", "title": "    - Both are high school students at Monta Vista High School", "to": "**Yash Thapliyal**", "width": 1}, {"from": "37. **Jai Sharma**", "label": "", "title": "    - Both are high school students at Monta Vista High School", "to": "**Rahul Shankar**", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

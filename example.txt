@@ -1,0 +1,141 @@
+```
+Jai Sharma ; Milind Maiti
+- Friends
+
+Jai Sharma ; Christopher Sun
+- Co-authored a research paper
+
+Jai Sharma ; Akshat Jha
+- Both are students at Monta Vista High School
+
+Jai Sharma ; Rithwik Nukala
+- Both are students at Monta Vista High School
+
+Jai Sharma ; Arjun Shrivastava
+- Both are students at Monta Vista High School
+
+Jai Sharma ; Yash Thapliyal
+- Both are students at Monta Vista High School
+
+Jai Sharma ; Rahul Shankar
+- Both are students at Monta Vista High School
+
+Jai Sharma ; Kunal Vijay Nalawade
+- Both are students at the University of California, Berkeley
+
+Jai Sharma ; Sofia Abramsky-Sze
+- Both are interested in research
+
+Jai Sharma ; Nadia AlAjmi
+- Both are interested in international relations
+
+Jai Sharma ; Jaeyeon Bae
+- Both are students at UC Berkeley
+
+Jai Sharma ; Esteban Benitez
+- Both are students at UC Berkeley
+
+Jai Sharma ; Chelsea Cano
+- Both are students at UC Berkeley
+
+Jai Sharma ; Antonio Chavez-Askew
+- Both are students at UC Berkeley
+
+Jai Sharma ; Lisha Chen
+- Both are students at UC Berkeley
+
+Jai Sharma ; Zoe Chyatte
+- Both are students at UC Berkeley
+
+Jai Sharma ; Cameron Danesh
+- Both are students at UC Berkeley
+
+Jai Sharma ; Xiaosang Huang
+- Both are students at UC Berkeley
+
+Jai Sharma ; Christina Ji
+- Both are students at UC Berkeley
+
+Jai Sharma ; Gamin Kim
+- Both are students at UC Berkeley
+
+Jai Sharma ; Serina Li
+- Both are students at UC Berkeley
+
+Jai Sharma ; Mallika Luthar
+- Both are students at UC Berkeley
+
+Jai Sharma ; Joseph Tak Maga
+- Both are students at UC Berkeley
+
+Jai Sharma ; Liam Mirise
+- Both are students at UC Berkeley
+
+Jai Sharma ; Rana Nejad
+- Both are students at UC Berkeley
+
+Jai Sharma ; Olivia Nouriani
+- Both are students at UC Berkeley
+
+Jai Sharma ; Evie Portier
+- Both are students at UC Berkeley
+
+Jai Sharma ; Xingying (Caroline) Ren
+- Both are students at UC Berkeley
+
+Jai Sharma ; Isabelle Valdes
+- Both are students at UC Berkeley
+
+Jai Sharma ; Joanna Vasquez
+- Both are students at UC Berkeley
+
+Jai Sharma ; Wendy Zhou
+- Both are students at UC Berkeley
+
+Milind Maiti ; Christopher Sun
+- Met at a national conference on machine learning
+
+Akshat Jha ; Rithwik Nukala
+- Team members in the robotics club
+
+Arjun Shrivastava ; Yash Thapliyal
+- Partners in the science fair
+
+Rahul Shankar ; Kunal Vijay Nalawade
+- Co-founders of a tech startup
+
+Sofia Abramsky-Sze ; Nadia AlAjmi
+- Organized an international symposium on human rights
+
+Jaeyeon Bae ; Esteban Benitez
+- Collaborated on a sustainable engineering project
+
+Chelsea Cano ; Antonio Chavez-Askew
+- Created a joint art exhibition
+
+Lisha Chen ; Zoe Chyatte
+- Participated in a hackathon together
+
+Cameron Danesh ; Xiaosang Huang
+- Co-authored an article on artificial intelligence ethics
+
+Christina Ji ; Gamin Kim
+- Studied abroad in the same program in South Korea
+
+Serina Li ; Mallika Luthar
+- Volunteered at the same non-profit organization
+
+Joseph Tak Maga ; Liam Mirise
+- Competed together in a mathematics competition
+
+Rana Nejad ; Olivia Nouriani
+- Developed a social media marketing strategy for a local business
+
+Evie Portier ; Xingying (Caroline) Ren
+- Members of a committee for campus sustainability
+
+Isabelle Valdes ; Joanna Vasquez
+- Played in the same intramural soccer team
+
+Wendy Zhou ; Milind Maiti
+- Attended the same blockchain workshop
